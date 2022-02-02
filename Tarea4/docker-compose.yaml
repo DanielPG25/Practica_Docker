@@ -29,7 +29,7 @@ services:
       - mariadb_data:/var/lib/mysql
   php:
     container_name: book_php
-    image: php:7.3-fpm-bullseye
+    image: dparrales/php-fpm-mysql:v1
     restart: always
     environment:
       USUARIO_BOOKMEDIK: bookmedik
